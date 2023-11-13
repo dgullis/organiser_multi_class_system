@@ -10,12 +10,12 @@ class TaskList:
 
     # returns list of tasks whose completed status is false.
     def see_incomplete_tasks(self):
-        incomplete_tasks = [task.contents for task in self.task_list if task.completed == False]
-        return incomplete_tasks
+        return [task.contents for task in self.task_list if task.completed == False]
+        
     
     # returns list of tasks whose completed status is true.
     def see_completed_tasks(self):
-        complete_tasks =  [task.contents for task in self.task_list if task.completed == True]
-        return complete_tasks
+        return [task.contents for task in self.task_list if task.completed == True]
+        
 
 
